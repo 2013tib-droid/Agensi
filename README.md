@@ -8,5 +8,5 @@ Gudang skill UI/UX untuk Claude Code, dikemas sebagai **plugin marketplace**.
 ```
 
 - **[PENGINGAT.md](PENGINGAT.md)**: daftar plugin, cara pakai di proyek lain, cara menambah/update skill.
-- **[CLAUDE.md](CLAUDE.md)**: aturan inti repo. Peta "kapan pakai skill mana" ada di skill `house-style:skill-router` supaya ikut terbawa ke proyek lain.
+- **[CLAUDE.md](CLAUDE.md)**: aturan inti repo. Peta "kapan pakai skill mana" ada di skill `house-style:ui-router` supaya ikut terbawa ke proyek lain.
 - Setiap folder `plugins/*` menyimpan `LICENSE` dan `SOURCE.md` dari repo asalnya.

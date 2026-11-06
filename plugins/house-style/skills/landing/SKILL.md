@@ -21,11 +21,13 @@ Kalau permintaan diawali `hemat`, cukup langkah 1 dan 2.
 
 ## Aturan kerja
 
-- Kalau ada `DESIGN.md` di root proyek, ikuti tokennya. Kalau tidak ada, pakai token Part B dari `landing-page-design`. Jangan membuat `DESIGN.md` baru kecuali diminta.
+- Baca `DESIGN.md` dan `docs/pola.md` proyek kalau ada, dan ikuti tokennya. Kalau tidak ada, pakai token Part B dari `landing-page-design`. Jangan membuat `DESIGN.md` baru kecuali diminta.
 - Pertanyaan intake dari `landing-page-design`: tanyakan sekaligus dalam satu pesan, hanya yang jawabannya belum ada di permintaan atau proyek. Kalau permintaan sudah cukup jelas, langsung kerjakan dan tulis asumsi dalam satu baris.
 - Baca hanya file yang disebut user dan file yang perlu diubah. Jangan menjelajah repo.
 - Maksimal satu efek motion "wow" per halaman.
 - Sebelum selesai, jalankan build atau lint proyek kalau ada.
+
+- Komponen baru yang layak dipakai ulang: tambahkan satu baris ke `docs/pola.md` kalau file itu ada.
 
 ## Jawaban akhir
 
