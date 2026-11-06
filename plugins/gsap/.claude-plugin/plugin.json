@@ -1,0 +1,9 @@
+{
+  "name": "gsap",
+  "description": "Skill resmi GSAP: core, timeline, ScrollTrigger, plugins, React, performa. Sumber: greensock/gsap-skills.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "GreenSock"
+  }
+}

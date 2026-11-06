@@ -1,0 +1,9 @@
+{
+  "name": "magic-ui",
+  "description": "Komponen animasi Magic UI (React + Tailwind + shadcn). Sumber: magicuidesign/magicui.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "Magic UI"
+  }
+}

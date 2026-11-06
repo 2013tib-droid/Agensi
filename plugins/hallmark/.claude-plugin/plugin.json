@@ -1,0 +1,9 @@
+{
+  "name": "hallmark",
+  "description": "Desain yang tidak terlihat buatan AI: landing page, redesign, tema. Sumber: Nutlope/hallmark.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "Nutlope"
+  }
+}

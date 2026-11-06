@@ -1,0 +1,25 @@
+{
+  "extraKnownMarketplaces": {
+    "agensi": {
+      "source": {
+        "source": "directory",
+        "path": "."
+      }
+    }
+  },
+  "enabledPlugins": {
+    "house-style@agensi": true,
+    "design-md@agensi": true,
+    "dimensional-drawing@agensi": true,
+    "emil-design@agensi": true,
+    "gsap@agensi": true,
+    "hallmark@agensi": true,
+    "impeccable@agensi": true,
+    "magic-ui@agensi": true,
+    "open-design-picks@agensi": true,
+    "scroll-world@agensi": true,
+    "taste-skill@agensi": true,
+    "ui-libraries@agensi": true,
+    "ui-ux-pro-max@agensi": true
+  }
+}
