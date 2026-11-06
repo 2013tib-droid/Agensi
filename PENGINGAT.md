@@ -6,7 +6,7 @@
 
 **Gudang skill** buat Claude. Claude tidak "ingat" antar sesi. Pengetahuannya disimpan di sini sebagai file skill (`SKILL.md`), lalu dipakai di proyek mana pun dengan cara memasang repo ini sebagai **plugin marketplace**.
 
-Isinya ada 13 plugin dan 55 skill UI/UX: gaya pribadi ditambah hasil kurasi dari 14 repo.
+Isinya ada 13 plugin dan 55 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 14 repo.
 
 | Plugin | Asal | Isi |
 |---|---|---|
@@ -70,7 +70,7 @@ Catatan:
    - Buat `plugins/<nama>/.claude-plugin/plugin.json`.
    - Daftarkan di `.claude-plugin/marketplace.json` dan `.claude/settings.json`.
    - Jalankan `claude plugin validate .`.
-3. Update tabel di file ini dan di `CLAUDE.md`.
+3. Update tabel di file ini dan di `CLAUDE.md`, jumlah plugin/skill di atas, dan tambahkan baris di Riwayat.
 
 ## 🔄 Cara update skill ke versi terbaru
 
@@ -89,7 +89,7 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 - **Repo `nexu-io/open-design`** berisi 171 skill. Yang diambil hanya 11 yang relevan untuk UI/web dan isinya lengkap (bukan sekadar penunjuk ke repo lain). Kalau butuh yang lain, tambahkan ke `OD_PICKS` di `scripts/sync-skills.sh`.
 - **Skill duplikat dari open-design tidak diambil** (taste, gsap, emil, ui-ux-pro-max). Yang dipakai versi aslinya.
 - **Beberapa skill butuh layanan luar:** `scroll-world` butuh Higgsfield, dan `hallmark` sebagian fiturnya pakai Together AI. Cek `SKILL.md`-nya sebelum dipakai.
-- **Ukuran repo** sekitar 65 MB, sebagian besar contoh foto di `taste-skill`.
+- **Ukuran repo** sekitar 64 MB (per 6 Nov 2026), sebagian besar contoh foto di `taste-skill`.
 
 ## 📜 Riwayat
 
