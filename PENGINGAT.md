@@ -6,11 +6,11 @@
 
 **Gudang skill** buat Claude. Claude tidak "ingat" antar sesi. Pengetahuannya disimpan di sini sebagai file skill (`SKILL.md`), lalu dipakai di proyek mana pun dengan cara memasang repo ini sebagai **plugin marketplace**.
 
-Isinya ada 14 plugin dan 63 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 15 repo.
+Isinya ada 14 plugin dan 65 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 15 repo.
 
 | Plugin | Asal | Isi |
 |---|---|---|
-| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `dashboard-design` + `figma-designer` + `ui-router`. Prioritas utama |
+| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `dashboard-design` + `figma-designer` + `ui-router`, plus perintah `/house-style:landing` dan `/house-style:polish`. Prioritas utama |
 | `antislop` | miqdadbadjuber/anti-slop | 6 skill filter AI-slop (UI, copy, mobile, a11y, komentar kode) + MCP cek kontras |
 | `ui-ux-pro-max` | nextlevelbuilder/ui-ux-pro-max-skill | Database gaya, palet, font, UX per stack |
 | `taste-skill` | Leonxlnx/taste-skill | Website perusahaan kelas atas |
@@ -25,7 +25,11 @@ Isinya ada 14 plugin dan 63 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah 
 | `design-md` | google-labs-code/design.md + VoltAgent/awesome-design-md | Format DESIGN.md + 84 contoh brand |
 | `ui-libraries` | DavidHDev/react-bits + DavidHDev/canvas-ui | Cara pasang komponen (kode tidak disalin) |
 
-Panduan "kapan pakai skill mana" ada di **[CLAUDE.md](CLAUDE.md)**. Karena `CLAUDE.md` tidak ikut terbawa ke proyek lain, salinannya ada di skill `house-style:ui-router`, jadi cukup nyalakan `house-style@agensi` dan panduannya ikut.
+Panduan "kapan pakai skill mana" ada di skill **[`house-style:ui-router`](plugins/house-style/skills/ui-router/SKILL.md)**. Skill ini dimuat hanya saat dibutuhkan (hemat token) dan ikut terbawa ke proyek lain lewat `house-style@agensi`. `CLAUDE.md` repo ini hanya berisi aturan inti.
+
+Perintah siap pakai (tidak memakan konteks sebelum dipanggil):
+- `/house-style:landing [hemat] <apa yang dibangun>`: landing-page-design + taste-skill + polish impeccable.
+- `/house-style:polish [audit] <file>`: impeccable + antislop mode *after*. Tambahkan `audit` untuk laporan saja tanpa edit.
 
 ## 🚀 Cara pakai di proyek baru
 
@@ -105,7 +109,7 @@ Kebiasaan yang ikut membantu: satu sesi untuk satu fitur (`/clear` saat ganti to
    - Buat `plugins/<nama>/.claude-plugin/plugin.json`.
    - Daftarkan di `.claude-plugin/marketplace.json` dan `.claude/settings.json`.
    - Jalankan `claude plugin validate .`.
-3. Update tabel di file ini, di `CLAUDE.md`, dan di skill `house-style:ui-router`, jumlah plugin/skill di atas, dan tambahkan baris di Riwayat.
+3. Update tabel di file ini dan di skill `house-style:ui-router`, jumlah plugin/skill di atas, dan tambahkan baris di Riwayat.
 
 ## 🔄 Cara update skill ke versi terbaru
 
@@ -137,5 +141,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Tambah plugin `antislop` dari miqdadbadjuber/anti-slop. Total 14 plugin dan 62 skill. |
 | 6 Nov 2026 | Strategi hemat token: preset plugin per jenis proyek, template proyek (`CLAUDE.md`, `docs/pola.md`), dan `scripts/init-proyek.sh`. |
 | 6 Nov 2026 | Tambah skill `house-style:dashboard-design` untuk dashboard dan app (menggantikan `landing-page-design` di layar setelah login). Total 63 skill. |
+| 6 Nov 2026 | Hemat token: tabel skill, alur kerja, dan biaya token dipindah dari `CLAUDE.md` ke `house-style:ui-router` saja (dimuat saat perlu), plus "mode hemat" lewat kata `hemat`. Tambah perintah manual `/house-style:landing` dan `/house-style:polish`. Total 65 skill. |
 
 *Dibuat: 6 November 2026*
