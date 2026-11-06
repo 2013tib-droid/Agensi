@@ -47,7 +47,7 @@ Skill yang hanya bisa dipanggil manual (pakai `/`): `/emil-design:pick-ui-librar
 
 Skill menambah token setiap kali dimuat. Penghematan datang dari tidak memuat ulang keputusan yang sudah dicatat.
 
-- **Biaya kira-kira per skill** (1 token ≈ 4 karakter): `antislop` ~13k, `antislop-ui` ~7k, `scroll-world` ~12k, `image-to-code-skill` ~9k, `house-style:*` ~5,5k, `taste-skill` ~5k, `ui-ux-pro-max` ~4k, `impeccable` ~3k, `design-md` ~0,6k.
+- **Biaya kira-kira per skill** (1 token ≈ 4 karakter): `antislop` ~13k, `antislop-ui` ~7k, `scroll-world` ~12k, `image-to-code-skill` ~9k, `landing-page-design` ~5,5k, `figma-designer` ~5,5k, `dashboard-design` ~2k, `ui-router` ~1,6k, `taste-skill` ~5k, `ui-ux-pro-max` ~4k, `impeccable` ~3k, `design-md` ~0,6k.
 - **Proyek memakai preset** dari `templates/presets/` (dipasang dengan `scripts/init-proyek.sh`). Plugin yang tidak aktif tidak memakan konteks.
 - **Folder `references/` jangan dibaca utuh** (hallmark 6 MB, design-md 3,3 MB). Ambil satu file yang relevan saja.
 - **Siklus yang membuat proyek makin hemat:** DESIGN.md + `docs/pola.md` + bagian "Keputusan" di CLAUDE.md proyek. Sesi berikutnya cukup membaca file kecil itu tanpa memuat ulang skill. Template ada di `templates/proyek/`.
