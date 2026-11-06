@@ -1,6 +1,6 @@
 ---
 name: ui-router
-description: "Picks which agensi UI/UX skill to use, in what order, and which rules win when skills disagree. Use this skill FIRST, before loading any other design skill, whenever a task involves building, styling, animating, redesigning, auditing or polishing a UI, website, landing page, app screen, component, Figma design, design system, DESIGN.md, brand asset or illustration — even when the user names no skill. Also use it when unsure which of the agensi skills (house-style, ui-ux-pro-max, design-md, taste-skill, hallmark, impeccable, emil-design, gsap, open-design-picks, magic-ui, ui-libraries, scroll-world, dimensional-drawing) fits."
+description: "Picks which agensi UI/UX skill to use, in what order, and which rules win when skills disagree. Use this skill FIRST, before loading any other design skill, whenever a task involves building, styling, animating, redesigning, auditing or polishing a UI, website, landing page, app screen, component, Figma design, design system, DESIGN.md, brand asset or illustration — even when the user names no skill. Also use it when unsure which of the agensi skills (house-style, antislop, ui-ux-pro-max, design-md, taste-skill, hallmark, impeccable, emil-design, gsap, open-design-picks, magic-ui, ui-libraries, scroll-world, dimensional-drawing) fits."
 ---
 
 # UI router: memilih skill agensi
@@ -9,7 +9,7 @@ Skill ini hanya peta. Ia tidak berisi aturan desain. Baca, pilih skill yang tepa
 
 ## Aturan prioritas
 
-1. **`house-style` selalu menang.** Kalau aturan skill lain bertentangan dengan `house-style:landing-page-design` atau `house-style:figma-designer`, ikuti `house-style`.
+1. **`house-style` selalu menang.** Kalau aturan skill lain bertentangan dengan `house-style:landing-page-design` atau `house-style:figma-designer`, ikuti `house-style`. Ini juga berlaku untuk `antislop`: ia filter penyaring slop, bukan sumber gaya.
 2. **`DESIGN.md` proyek menang atas selera skill lain.** Token warna, font, spacing, dan radius di `DESIGN.md` dipakai apa adanya, kecuali bertentangan dengan aturan `house-style`.
 3. **Muat seperlunya.** Pakai satu skill utama per tugas, tambah pendukung hanya kalau memang dibutuhkan. Jangan memuat beberapa skill "pembangun halaman" (taste-skill, hallmark, frontend-design) sekaligus: pilih satu.
 4. **Hanya pakai skill yang aktif.** Proyek bisa menyalakan sebagian plugin saja. Kalau skill pilihan tidak tersedia, pakai pendukungnya atau lanjut dengan `house-style` saja. Jangan mengarang isi skill yang tidak termuat.
@@ -23,6 +23,7 @@ Skill ini hanya peta. Ia tidak berisi aturan desain. Baca, pilih skill yang tepa
 | Mulai proyek baru, tentukan gaya visual | `ui-ux-pro-max:ui-ux-pro-max` | `design-md:design-md` (simpan hasilnya ke `DESIGN.md`) |
 | "Bikin mirip Stripe / Linear / Apple" | `design-md:design-md` (lihat `references/brands/`) | `ui-ux-pro-max:design-system` |
 | Landing page / company website kelas atas | `taste-skill:taste-skill` | `hallmark:hallmark`, `open-design-picks:frontend-design` |
+| Buang "AI slop" (UI, copy, layout mobile, aksesibilitas, komentar kode) | `antislop:antislop` (core, selalu dimuat bersama) | `antislop:antislop-ui`, `antislop:antislop-copywriting`, `antislop:antislop-layoutmobile`, `antislop:antislop-human`, `antislop:antislop-code` |
 | Polish, audit, kritik UI yang sudah ada | `impeccable:impeccable` | `open-design-picks:web-design-guidelines`, `open-design-picks:redesign-skill` |
 | Animasi & micro-interaction | `emil-design:animate`, `emil-design:emil-design-eng` | `emil-design:animation-performance`, `/emil-design:review-animations` |
 | Animasi kompleks, timeline, scroll | `gsap:gsap-core`, `gsap:gsap-scrolltrigger` | `gsap:gsap-react` |
@@ -47,7 +48,7 @@ Skill yang hanya bisa dipanggil manual oleh pengguna (pakai `/`): `/emil-design:
 1. Cek `DESIGN.md` di root proyek. Kalau belum ada, buat dulu (`design-md` + `ui-ux-pro-max`).
 2. Bangun layar dengan `house-style:landing-page-design` sebagai aturan dasar, ditambah satu dari `taste-skill` / `hallmark` / `frontend-design`, mengikuti token `DESIGN.md`.
 3. Tambah motion seperlunya (`emil-design`, `gsap`, `react-bits`, `magic-ui`), maksimal satu atau dua efek "wow" per halaman.
-4. Polish dan audit dengan `impeccable` sebelum dianggap selesai.
+4. Polish dan audit dengan `impeccable` sebelum dianggap selesai, lalu saring dengan `antislop` (mode *after*) supaya tidak ada sisa AI slop.
 
 ## Catatan lisensi
 

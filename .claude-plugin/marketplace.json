@@ -4,7 +4,7 @@
     "name": "2013tib-droid"
   },
   "metadata": {
-    "description": "Gudang skill UI/UX & desain untuk Claude Code, dikurasi dari 14 repo open source.",
+    "description": "Gudang skill UI/UX & desain untuk Claude Code, dikurasi dari 15 repo open source.",
     "version": "1.0.0"
   },
   "plugins": [
@@ -12,6 +12,12 @@
       "name": "house-style",
       "source": "./plugins/house-style",
       "description": "Gaya desain pribadi: aturan landing page (struktur, copy, SEO, tipografi, spacing, radius, motion) cara mendesain di Figma (variables, auto layout, komponen), dan peta pemilihan skill agensi. Prioritas utama di atas skill lain.",
+      "category": "design"
+    },
+    {
+      "name": "antislop",
+      "source": "./plugins/antislop",
+      "description": "Filter anti AI-slop: UI, copy, layout mobile, aksesibilitas (plus pengecek kontras), dan komentar kode. Sumber: miqdadbadjuber/anti-slop.",
       "category": "design"
     },
     {
