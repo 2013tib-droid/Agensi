@@ -57,7 +57,7 @@ Skill yang hanya bisa dipanggil manual oleh pengguna (pakai `/`): `/emil-design:
 Setiap skill yang dimuat menambah token. Penghematan datang dari tidak memutuskan hal yang sama dua kali.
 
 - **Baca catatan proyek dulu:** `DESIGN.md`, `docs/pola.md`, dan bagian "Keputusan" di `CLAUDE.md` proyek. Muat skill hanya untuk hal yang belum dijawab catatan itu.
-- **Biaya kira-kira:** `antislop` ~13k token, `scroll-world` ~12k, `image-to-code-skill` ~9k, `antislop-ui` ~7k, `house-style:*` ~5,5k, `taste-skill` ~5k, `ui-ux-pro-max` ~4k, `impeccable` ~3k, `design-md` ~0,6k. Pilih yang paling kecil yang cukup.
+- **Biaya kira-kira:** `antislop` ~13k token, `scroll-world` ~12k, `image-to-code-skill` ~9k, `antislop-ui` ~7k, `landing-page-design` ~5,5k, `figma-designer` ~5,5k, `dashboard-design` ~2k, `ui-router` ~1,6k, `taste-skill` ~5k, `ui-ux-pro-max` ~4k, `impeccable` ~3k, `design-md` ~0,6k. Pilih yang paling kecil yang cukup.
 - **Jangan baca folder `references/` utuh** (hallmark dan design-md berukuran megabyte). Ambil satu file yang relevan.
 - **Edit bagian kecil.** Cari dulu dengan grep sebelum membaca, dan jangan menulis ulang file besar.
 - **Pelajaran yang berlaku untuk semua proyek:** usulkan ke pengguna untuk dimasukkan ke `house-style` di repo agensi.
