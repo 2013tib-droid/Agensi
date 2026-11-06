@@ -1,0 +1,9 @@
+{
+  "name": "taste-skill",
+  "description": "Website perusahaan kelas atas: satu section per layar, foto asli, UI produk asli, dicek di browser. Sumber: Leonxlnx/taste-skill.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "Leonxlnx"
+  }
+}

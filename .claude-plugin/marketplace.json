@@ -1,0 +1,90 @@
+{
+  "name": "agensi",
+  "owner": {
+    "name": "2013tib-droid"
+  },
+  "metadata": {
+    "description": "Gudang skill UI/UX & desain untuk Claude Code, dikurasi dari 14 repo open source.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "house-style",
+      "source": "./plugins/house-style",
+      "description": "Gaya desain pribadi: aturan landing page (struktur, copy, SEO, tipografi, spacing, radius, motion) dan cara mendesain di Figma (variables, auto layout, komponen). Prioritas utama di atas skill lain.",
+      "category": "design"
+    },
+    {
+      "name": "design-md",
+      "source": "./plugins/design-md",
+      "description": "Menulis & memakai DESIGN.md (spesifikasi design system untuk agent), plus 80+ contoh DESIGN.md brand. Sumber: google-labs-code/design.md + VoltAgent/awesome-design-md.",
+      "category": "design"
+    },
+    {
+      "name": "dimensional-drawing",
+      "source": "./plugins/dimensional-drawing",
+      "description": "Gambar/ilustrasi dimensional dan versi motion-nya. Sumber: enesozturk/dimensional-drawing.",
+      "category": "design"
+    },
+    {
+      "name": "emil-design",
+      "source": "./plugins/emil-design",
+      "description": "Animasi & design engineering ala Emil Kowalski: animate, review, performa, Apple design, pilih UI library. Sumber: emilkowalski/skills.",
+      "category": "design"
+    },
+    {
+      "name": "gsap",
+      "source": "./plugins/gsap",
+      "description": "Skill resmi GSAP: core, timeline, ScrollTrigger, plugins, React, performa. Sumber: greensock/gsap-skills.",
+      "category": "design"
+    },
+    {
+      "name": "hallmark",
+      "source": "./plugins/hallmark",
+      "description": "Desain yang tidak terlihat buatan AI: landing page, redesign, tema. Sumber: Nutlope/hallmark.",
+      "category": "design"
+    },
+    {
+      "name": "impeccable",
+      "source": "./plugins/impeccable",
+      "description": "Kefasihan desain frontend: polish, audit, critique, deteksi anti-pattern. Sumber: pbakaus/impeccable.",
+      "category": "design"
+    },
+    {
+      "name": "magic-ui",
+      "source": "./plugins/magic-ui",
+      "description": "Komponen animasi Magic UI (React + Tailwind + shadcn). Sumber: magicuidesign/magicui.",
+      "category": "design"
+    },
+    {
+      "name": "open-design-picks",
+      "source": "./plugins/open-design-picks",
+      "description": "Pilihan skill UI/web dari OpenDesign: gaya brutalist/minimalist/soft, design brief, redesign, image-to-code, motion, dll. Sumber: nexu-io/open-design.",
+      "category": "design"
+    },
+    {
+      "name": "scroll-world",
+      "source": "./plugins/scroll-world",
+      "description": "Landing page sinematik 'terbang menembus dunia' berbasis scroll. Sumber: oso95/scroll-world.",
+      "category": "design"
+    },
+    {
+      "name": "taste-skill",
+      "source": "./plugins/taste-skill",
+      "description": "Website perusahaan kelas atas: satu section per layar, foto asli, UI produk asli, dicek di browser. Sumber: Leonxlnx/taste-skill.",
+      "category": "design"
+    },
+    {
+      "name": "ui-libraries",
+      "source": "./plugins/ui-libraries",
+      "description": "Kapan & cara memasang komponen React Bits dan Canvas UI lewat shadcn registry (kode tidak disalin, lisensi Commons Clause).",
+      "category": "design"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "source": "./plugins/ui-ux-pro-max",
+      "description": "Database gaya, palet, font pairing, dan panduan UX per stack (React, Next, Vue, Flutter, SwiftUI, dll). Sumber: nextlevelbuilder/ui-ux-pro-max-skill.",
+      "category": "design"
+    }
+  ]
+}

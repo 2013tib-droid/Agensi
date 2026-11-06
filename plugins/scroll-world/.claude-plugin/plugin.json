@@ -1,0 +1,9 @@
+{
+  "name": "scroll-world",
+  "description": "Landing page sinematik 'terbang menembus dunia' berbasis scroll. Sumber: oso95/scroll-world.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "cyw (oso95)"
+  }
+}

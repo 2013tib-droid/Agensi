@@ -1,0 +1,9 @@
+{
+  "name": "dimensional-drawing",
+  "description": "Gambar/ilustrasi dimensional dan versi motion-nya. Sumber: enesozturk/dimensional-drawing.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "Enes Ozturk"
+  }
+}

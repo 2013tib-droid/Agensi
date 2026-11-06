@@ -1,0 +1,9 @@
+{
+  "name": "design-md",
+  "description": "Menulis & memakai DESIGN.md (spesifikasi design system untuk agent), plus 80+ contoh DESIGN.md brand. Sumber: google-labs-code/design.md + VoltAgent/awesome-design-md.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "Google Labs + VoltAgent (dikurasi agensi)"
+  }
+}

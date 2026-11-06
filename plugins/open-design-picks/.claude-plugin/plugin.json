@@ -1,0 +1,9 @@
+{
+  "name": "open-design-picks",
+  "description": "Pilihan skill UI/web dari OpenDesign: gaya brutalist/minimalist/soft, design brief, redesign, image-to-code, motion, dll. Sumber: nexu-io/open-design.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "nexu-io / OpenDesign"
+  }
+}
