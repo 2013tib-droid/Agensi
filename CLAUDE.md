@@ -17,6 +17,7 @@ Plugin `house-style` adalah gaya pribadi pemilik repo, jadi aturannya **menang**
 | Mulai proyek baru, tentukan gaya visual | `ui-ux-pro-max:ui-ux-pro-max` | `design-md:design-md` (simpan hasilnya ke DESIGN.md) |
 | "Bikin mirip Stripe / Linear / Apple" | `design-md:design-md` (lihat `references/brands/`) | `ui-ux-pro-max:design-system` |
 | Landing page / company website kelas atas | `taste-skill:taste-skill` | `hallmark:hallmark`, `open-design-picks:frontend-design` |
+| Buang "AI slop" (UI, copy, layout mobile, aksesibilitas, komentar kode) | `antislop:antislop` (core, selalu dimuat bersama) | `antislop:antislop-ui`, `antislop:antislop-copywriting`, `antislop:antislop-layoutmobile`, `antislop:antislop-human`, `antislop:antislop-code` |
 | Polish, audit, kritik UI yang sudah ada | `impeccable:impeccable` | `open-design-picks:web-design-guidelines`, `open-design-picks:redesign-skill` |
 | Animasi & micro-interaction | `emil-design:animate`, `emil-design:emil-design-eng` | `emil-design:animation-performance`, `/emil-design:review-animations` |
 | Animasi kompleks, timeline, scroll | `gsap:gsap-core`, `gsap:gsap-scrolltrigger` | `gsap:gsap-react` |
@@ -36,7 +37,7 @@ Skill yang hanya bisa dipanggil manual (pakai `/`): `/emil-design:pick-ui-librar
 1. Cek `DESIGN.md` di root proyek. Kalau belum ada, buat dulu (`design-md` + `ui-ux-pro-max`).
 2. Bangun layar dengan `taste-skill` / `hallmark` / `frontend-design`, mengikuti token DESIGN.md.
 3. Tambah motion seperlunya (`emil-design`, `gsap`, `react-bits`, `magic-ui`), maksimal satu atau dua efek "wow" per halaman.
-4. Polish dan audit dengan `impeccable` sebelum dianggap selesai.
+4. Polish dan audit dengan `impeccable` sebelum dianggap selesai, lalu saring dengan `antislop` (mode *after*) supaya tidak ada sisa AI slop.
 
 ## Aturan repo
 

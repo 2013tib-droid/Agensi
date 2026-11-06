@@ -6,11 +6,12 @@
 
 **Gudang skill** buat Claude. Claude tidak "ingat" antar sesi. Pengetahuannya disimpan di sini sebagai file skill (`SKILL.md`), lalu dipakai di proyek mana pun dengan cara memasang repo ini sebagai **plugin marketplace**.
 
-Isinya ada 13 plugin dan 55 skill UI/UX: gaya pribadi ditambah hasil kurasi dari 14 repo.
+Isinya ada 14 plugin dan 61 skill UI/UX: gaya pribadi ditambah hasil kurasi dari 15 repo.
 
 | Plugin | Asal | Isi |
 |---|---|---|
 | `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer`. Prioritas utama |
+| `antislop` | miqdadbadjuber/anti-slop | 6 skill filter AI-slop (UI, copy, mobile, a11y, komentar kode) + MCP cek kontras |
 | `ui-ux-pro-max` | nextlevelbuilder/ui-ux-pro-max-skill | Database gaya, palet, font, UX per stack |
 | `taste-skill` | Leonxlnx/taste-skill | Website perusahaan kelas atas |
 | `impeccable` | pbakaus/impeccable | Polish, audit, critique UI |
@@ -98,5 +99,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Skill pribadi `landing-page-design` dan `figma-designer` sudah ada di `.claude/skills/`. |
 | 6 Nov 2026 | Repo dijadikan plugin marketplace: 13 plugin dan 55 skill. Skill pribadi dipindah ke `plugins/house-style/`. |
 | 6 Nov 2026 | [PR #1](https://github.com/2013tib-droid/Agensi/pull/1) **di-merge ke `main`**. Marketplace siap dipakai di proyek lain lewat `/plugin marketplace add 2013tib-droid/agensi`. |
+| 6 Nov 2026 | Tambah plugin `antislop` dari miqdadbadjuber/anti-slop: 14 plugin dan 61 skill. |
 
 *Dibuat: 6 November 2026*

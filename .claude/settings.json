@@ -9,6 +9,7 @@
   },
   "enabledPlugins": {
     "house-style@agensi": true,
+    "antislop@agensi": true,
     "design-md@agensi": true,
     "dimensional-drawing@agensi": true,
     "emil-design@agensi": true,
