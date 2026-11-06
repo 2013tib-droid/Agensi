@@ -1,0 +1,9 @@
+{
+  "name": "impeccable",
+  "description": "Kefasihan desain frontend: polish, audit, critique, deteksi anti-pattern. Sumber: pbakaus/impeccable.",
+  "version": "1.0.0",
+  "skills": "./.claude/skills/",
+  "author": {
+    "name": "Paul Bakaus"
+  }
+}

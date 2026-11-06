@@ -1,0 +1,9 @@
+{
+  "name": "emil-design",
+  "description": "Animasi & design engineering ala Emil Kowalski: animate, review, performa, Apple design, pilih UI library. Sumber: emilkowalski/skills.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "Emil Kowalski"
+  }
+}

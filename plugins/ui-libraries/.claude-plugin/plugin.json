@@ -1,0 +1,9 @@
+{
+  "name": "ui-libraries",
+  "description": "Kapan & cara memasang komponen React Bits dan Canvas UI lewat shadcn registry (kode tidak disalin, lisensi Commons Clause).",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "agensi (berdasar React Bits & Canvas UI karya David Haz)"
+  }
+}

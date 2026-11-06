@@ -1,0 +1,9 @@
+{
+  "name": "ui-ux-pro-max",
+  "description": "Database gaya, palet, font pairing, dan panduan UX per stack (React, Next, Vue, Flutter, SwiftUI, dll). Sumber: nextlevelbuilder/ui-ux-pro-max-skill.",
+  "version": "1.0.0",
+  "skills": "./.claude/skills/",
+  "author": {
+    "name": "nextlevelbuilder"
+  }
+}
