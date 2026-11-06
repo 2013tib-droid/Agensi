@@ -1,0 +1,16 @@
+{
+  "name": "antislop",
+  "description": "Filter anti AI-slop untuk UI, copy, layout mobile, aksesibilitas, dan komentar kode, plus pengecek kontras (MCP). Sumber: miqdadbadjuber/anti-slop.",
+  "version": "1.0.0",
+  "skills": "./skills/",
+  "author": {
+    "name": "miqdadbadjuber"
+  },
+  "mcpServers": {
+    "antislop-contrast": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/.claude-plugin/contrast-mcp-launcher.mjs"],
+      "env": {}
+    }
+  }
+}
