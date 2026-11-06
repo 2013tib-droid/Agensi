@@ -21,6 +21,7 @@ REPOS=(
   nexu-io/open-design
   VoltAgent/awesome-design-md
   google-labs-code/design.md
+  miqdadbadjuber/anti-slop
 )
 
 for r in "${REPOS[@]}"; do
@@ -105,6 +106,12 @@ for s in "${OD_PICKS[@]}"; do
   copy nexu-io_open-design "skills/$s" open-design-picks "skills/$s"
 done
 license nexu-io_open-design open-design-picks nexu-io/open-design
+
+# --- antislop: manifest (plugin.json, dengan MCP antislop-contrast) ditulis sendiri; launcher MCP ikut disalin
+reset antislop
+copy miqdadbadjuber_anti-slop skills antislop skills
+cp "$SRC/miqdadbadjuber_anti-slop/.claude-plugin/contrast-mcp-launcher.mjs" "$ROOT/plugins/antislop/.claude-plugin/"
+license miqdadbadjuber_anti-slop antislop miqdadbadjuber/anti-slop
 
 # --- design-md: referensi (spec Google + koleksi DESIGN.md VoltAgent). SKILL.md ditulis sendiri.
 REF="$ROOT/plugins/design-md/skills/design-md/references"
