@@ -11,7 +11,7 @@
     {
       "name": "house-style",
       "source": "./plugins/house-style",
-      "description": "Gaya desain pribadi: aturan landing page (struktur, copy, SEO, tipografi, spacing, radius, motion) dan cara mendesain di Figma (variables, auto layout, komponen). Prioritas utama di atas skill lain.",
+      "description": "Gaya desain pribadi: aturan landing page (struktur, copy, SEO, tipografi, spacing, radius, motion) dan cara mendesain di Figma (variables, auto layout, komponen), serta peta pemilihan skill. Prioritas utama di atas skill lain.",
       "category": "design"
     },
     {
