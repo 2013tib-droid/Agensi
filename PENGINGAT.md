@@ -10,7 +10,7 @@ Isinya ada 14 plugin dan 61 skill UI/UX: gaya pribadi ditambah hasil kurasi dari
 
 | Plugin | Asal | Isi |
 |---|---|---|
-| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer` + `skill-router`. Prioritas utama |
+| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer` + `skill-router`, plus perintah `/house-style:landing` dan `/house-style:polish`. Prioritas utama |
 | `antislop` | miqdadbadjuber/anti-slop | 6 skill filter AI-slop (UI, copy, mobile, a11y, komentar kode) + MCP cek kontras |
 | `ui-ux-pro-max` | nextlevelbuilder/ui-ux-pro-max-skill | Database gaya, palet, font, UX per stack |
 | `taste-skill` | Leonxlnx/taste-skill | Website perusahaan kelas atas |
@@ -26,6 +26,10 @@ Isinya ada 14 plugin dan 61 skill UI/UX: gaya pribadi ditambah hasil kurasi dari
 | `ui-libraries` | DavidHDev/react-bits + DavidHDev/canvas-ui | Cara pasang komponen (kode tidak disalin) |
 
 Panduan "kapan pakai skill mana" ada di skill **[`house-style:skill-router`](plugins/house-style/skills/skill-router/SKILL.md)**, dimuat hanya saat dibutuhkan supaya hemat token.
+
+Perintah siap pakai (tidak memakan konteks sebelum dipanggil):
+- `/house-style:landing [hemat] <apa yang dibangun>`: landing-page-design + taste-skill + polish impeccable.
+- `/house-style:polish [audit] <file>`: impeccable + antislop mode *after*. Tambahkan `audit` untuk laporan saja tanpa edit.
 
 ## 🚀 Cara pakai di proyek baru
 
@@ -101,5 +105,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | [PR #1](https://github.com/2013tib-droid/Agensi/pull/1) **di-merge ke `main`**. Marketplace siap dipakai di proyek lain lewat `/plugin marketplace add 2013tib-droid/agensi`. |
 | 6 Nov 2026 | Tambah plugin `antislop` dari miqdadbadjuber/anti-slop: 14 plugin dan 61 skill. |
 | 6 Nov 2026 | Hemat token: tabel skill dan alur kerja dipindah dari `CLAUDE.md` ke skill baru `house-style:skill-router` (dimuat saat perlu), plus "mode hemat". 14 plugin dan 62 skill. |
+| 6 Nov 2026 | Tambah perintah manual `/house-style:landing` dan `/house-style:polish` (skill dengan `disable-model-invocation`). 14 plugin dan 64 skill. |
 
 *Dibuat: 6 November 2026*

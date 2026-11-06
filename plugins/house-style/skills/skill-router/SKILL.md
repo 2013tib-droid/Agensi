@@ -36,7 +36,7 @@ Kalau user menulis `hemat`, atau sudah menyebut skill yang dipakai:
 | Screenshot → kode | `open-design-picks:image-to-code-skill` | |
 | Brand, banner, slide | `ui-ux-pro-max:brand`, `ui-ux-pro-max:banner-design`, `ui-ux-pro-max:slides` | |
 
-Skill yang hanya bisa dipanggil manual (pakai `/`): `/emil-design:pick-ui-library`, `/emil-design:prototype`, `/emil-design:review-animations`.
+Skill yang hanya bisa dipanggil manual (pakai `/`): `/house-style:landing`, `/house-style:polish`, `/emil-design:pick-ui-library`, `/emil-design:prototype`, `/emil-design:review-animations`.
 
 Kalau plugin sebuah skill tidak aktif di proyek, lewati skill itu dan pakai alternatif di baris yang sama.
 
