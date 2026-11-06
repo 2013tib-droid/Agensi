@@ -43,3 +43,4 @@ Skill yang hanya bisa dipanggil manual (pakai `/`): `/emil-design:pick-ui-librar
 - Isi `plugins/*` (kecuali `house-style/`, `design-md/skills/design-md/SKILL.md`, dan `ui-libraries/`) adalah salinan upstream. Jangan diedit manual; update lewat `bash scripts/sync-skills.sh`.
 - Skill baru: buat folder `plugins/<nama>/` dengan `.claude-plugin/plugin.json` + `skills/<skill>/SKILL.md`, lalu daftarkan di `.claude-plugin/marketplace.json` dan `.claude/settings.json`. Cek dengan `claude plugin validate .`.
 - Setiap plugin wajib menyimpan `LICENSE` dan `SOURCE.md` dari sumbernya.
+- Setelah menambah, menghapus, atau mengganti skill/plugin: perbarui tabel "Kapan pakai skill mana" di file ini, lalu di `PENGINGAT.md` perbarui tabel plugin, jumlah plugin/skill beserta tanggalnya, dan tambahkan satu baris di bagian Riwayat.
