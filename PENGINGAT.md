@@ -29,7 +29,29 @@ Panduan "kapan pakai skill mana" ada di **[CLAUDE.md](CLAUDE.md)**.
 
 ## 🚀 Cara pakai di proyek baru
 
-**Opsi A: sekali pasang, berlaku di proyek itu (direkomendasikan).**
+**Opsi 0: satu perintah, langsung hemat token (paling direkomendasikan).**
+
+```bash
+bash scripts/init-proyek.sh ../proyek-baru dashboard
+```
+
+Perintah ini menyalin tiga file ke proyek (file yang sudah ada tidak ditimpa):
+- `.claude/settings.json`: preset plugin, jadi hanya plugin yang relevan yang aktif.
+- `CLAUDE.md`: aturan hemat token dan bagian "Keputusan".
+- `docs/pola.md`: daftar komponen yang sudah ada.
+
+Pilihan preset (`templates/presets/`):
+
+| Preset | Untuk | Plugin |
+|---|---|---|
+| `dashboard` | dashboard, admin, app internal | house-style, design-md, ui-ux-pro-max, impeccable, antislop |
+| `landing` | landing page, company site | + taste-skill, emil-design |
+| `landing-sinematik` | landing dengan animasi berat | + gsap, scroll-world, magic-ui, ui-libraries |
+| `lanjutan` | proyek yang DESIGN.md-nya sudah matang | house-style, impeccable, antislop |
+
+Di Claude Code web/cloud, cukup bilang: *"tambahkan repo 2013tib-droid/agensi, lalu jalankan init-proyek.sh untuk proyek ini dengan preset dashboard"*.
+
+**Opsi A: isi manual.**
 Di repo proyek baru, buat/isi `.claude/settings.json`:
 
 ```json
@@ -62,6 +84,18 @@ Nyalakan hanya plugin yang dibutuhkan proyek itu. Daftar lengkap ada di tabel di
 Catatan:
 - Kalau repo `agensi` private, akun GitHub yang dipakai harus punya akses ke repo ini.
 - Di dalam repo `agensi` sendiri, semua plugin sudah otomatis aktif lewat `.claude/settings.json`.
+
+## 💰 Strategi hemat token (makin lama makin hemat)
+
+Skill **tidak** membuat hemat dengan sendirinya, karena setiap skill yang dimuat menambah token. Yang membuat hemat adalah **tidak memutuskan hal yang sama dua kali**:
+
+1. **Proyek baru:** jalankan `init-proyek.sh`, lalu minta Claude membuat `DESIGN.md`. Ini satu-satunya sesi "mahal".
+2. **Setiap fitur:** Claude membaca `DESIGN.md` + `docs/pola.md` (beberapa ratus token), bukan skill (puluhan ribu token).
+3. **Akhir fitur:** keputusan dan komponen baru dicatat. Audit `impeccable`/`antislop` sekali per fitur, bukan per layar.
+4. **Lintas proyek:** pelajaran yang berlaku umum masuk ke `plugins/house-style/`. Proyek ke-10 langsung mewarisi pelajaran dari 9 proyek sebelumnya.
+5. **DESIGN.md sudah matang?** Turunkan ke preset `lanjutan`.
+
+Kebiasaan yang ikut membantu: satu sesi untuk satu fitur (`/clear` saat ganti topik), beri path file yang spesifik, dan minta edit kecil, bukan "tulis ulang halaman ini".
 
 ## ➕ Cara menambah skill baru
 
@@ -100,5 +134,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Repo dijadikan plugin marketplace: 13 plugin dan 55 skill. Skill pribadi dipindah ke `plugins/house-style/`. |
 | 6 Nov 2026 | [PR #1](https://github.com/2013tib-droid/Agensi/pull/1) **di-merge ke `main`**. Marketplace siap dipakai di proyek lain lewat `/plugin marketplace add 2013tib-droid/agensi`. |
 | 6 Nov 2026 | Tambah plugin `antislop` dari miqdadbadjuber/anti-slop: 14 plugin dan 61 skill. |
+| 6 Nov 2026 | Strategi hemat token: preset plugin per jenis proyek, template proyek (`CLAUDE.md`, `docs/pola.md`), dan `scripts/init-proyek.sh`. |
 
 *Dibuat: 6 November 2026*
