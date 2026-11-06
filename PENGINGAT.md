@@ -6,11 +6,11 @@
 
 **Gudang skill** buat Claude. Claude tidak "ingat" antar sesi. Pengetahuannya disimpan di sini sebagai file skill (`SKILL.md`), lalu dipakai di proyek mana pun dengan cara memasang repo ini sebagai **plugin marketplace**.
 
-Isinya ada 14 plugin dan 62 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 15 repo.
+Isinya ada 14 plugin dan 63 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 15 repo.
 
 | Plugin | Asal | Isi |
 |---|---|---|
-| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer` + `ui-router`. Prioritas utama |
+| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `dashboard-design` + `figma-designer` + `ui-router`. Prioritas utama |
 | `antislop` | miqdadbadjuber/anti-slop | 6 skill filter AI-slop (UI, copy, mobile, a11y, komentar kode) + MCP cek kontras |
 | `ui-ux-pro-max` | nextlevelbuilder/ui-ux-pro-max-skill | Database gaya, palet, font, UX per stack |
 | `taste-skill` | Leonxlnx/taste-skill | Website perusahaan kelas atas |
@@ -136,5 +136,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Tambah skill `house-style:ui-router` supaya panduan pemilihan skill ikut terbawa ke proyek lain. Total 56 skill. |
 | 6 Nov 2026 | Tambah plugin `antislop` dari miqdadbadjuber/anti-slop. Total 14 plugin dan 62 skill. |
 | 6 Nov 2026 | Strategi hemat token: preset plugin per jenis proyek, template proyek (`CLAUDE.md`, `docs/pola.md`), dan `scripts/init-proyek.sh`. |
+| 6 Nov 2026 | Tambah skill `house-style:dashboard-design` untuk dashboard dan app (menggantikan `landing-page-design` di layar setelah login). Total 63 skill. |
 
 *Dibuat: 6 November 2026*

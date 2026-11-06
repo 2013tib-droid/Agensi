@@ -9,7 +9,7 @@ Skill ini hanya peta. Ia tidak berisi aturan desain. Baca, pilih skill yang tepa
 
 ## Aturan prioritas
 
-1. **`house-style` selalu menang.** Kalau aturan skill lain bertentangan dengan `house-style:landing-page-design` atau `house-style:figma-designer`, ikuti `house-style`. Ini juga berlaku untuk `antislop`: ia filter penyaring slop, bukan sumber gaya.
+1. **`house-style` selalu menang.** Kalau aturan skill lain bertentangan dengan `house-style:landing-page-design`, `house-style:dashboard-design`, atau `house-style:figma-designer`, ikuti `house-style`. Ini juga berlaku untuk `antislop`: ia filter penyaring slop, bukan sumber gaya.
 2. **`DESIGN.md` proyek menang atas selera skill lain.** Token warna, font, spacing, dan radius di `DESIGN.md` dipakai apa adanya, kecuali bertentangan dengan aturan `house-style`.
 3. **Muat seperlunya.** Pakai satu skill utama per tugas, tambah pendukung hanya kalau memang dibutuhkan. Jangan memuat beberapa skill "pembangun halaman" (taste-skill, hallmark, frontend-design) sekaligus: pilih satu.
 4. **Hanya pakai skill yang aktif.** Proyek bisa menyalakan sebagian plugin saja. Kalau skill pilihan tidak tersedia, pakai pendukungnya atau lanjut dengan `house-style` saja. Jangan mengarang isi skill yang tidak termuat.
@@ -18,7 +18,8 @@ Skill ini hanya peta. Ia tidak berisi aturan desain. Baca, pilih skill yang tepa
 
 | Kebutuhan | Skill utama | Pendukung |
 |---|---|---|
-| Landing page / web UI apa pun (selalu dulu) | `house-style:landing-page-design` | skill lain di bawah |
+| Landing page / web UI publik (selalu dulu) | `house-style:landing-page-design` | skill lain di bawah |
+| Dashboard, admin panel, app internal, layar setelah login | `house-style:dashboard-design` (gantikan `landing-page-design`) | `impeccable:impeccable` untuk audit |
 | Desain di Figma | `house-style:figma-designer` | `design-md:design-md` |
 | Mulai proyek baru, tentukan gaya visual | `ui-ux-pro-max:ui-ux-pro-max` | `design-md:design-md` (simpan hasilnya ke `DESIGN.md`) |
 | "Bikin mirip Stripe / Linear / Apple" | `design-md:design-md` (lihat `references/brands/`) | `ui-ux-pro-max:design-system` |
@@ -46,7 +47,7 @@ Skill yang hanya bisa dipanggil manual oleh pengguna (pakai `/`): `/emil-design:
 ## Alur kerja default untuk UI baru
 
 1. Cek `DESIGN.md` di root proyek. Kalau belum ada, buat dulu (`design-md` + `ui-ux-pro-max`). Ini hanya dilakukan **sekali per proyek**.
-2. Bangun layar dengan `house-style:landing-page-design` sebagai aturan dasar, mengikuti token `DESIGN.md`. Tambah satu dari `taste-skill` / `hallmark` / `frontend-design` hanya untuk landing page atau saat `DESIGN.md` belum menjawab.
+2. Bangun layar dengan `house-style:landing-page-design` (atau `house-style:dashboard-design` untuk dashboard/app) sebagai aturan dasar, mengikuti token `DESIGN.md`. Tambah satu dari `taste-skill` / `hallmark` / `frontend-design` hanya untuk landing page atau saat `DESIGN.md` belum menjawab.
 3. Tambah motion seperlunya (`emil-design`, `gsap`, `react-bits`, `magic-ui`), maksimal satu atau dua efek "wow" per halaman. Dashboard umumnya tidak perlu.
 4. Saat **fitur selesai** (bukan per layar), audit file yang berubah dengan `impeccable`, lalu `antislop` (mode *after*).
 5. Catat hasilnya: keputusan visual ke `DESIGN.md`, komponen baru ke `docs/pola.md`.

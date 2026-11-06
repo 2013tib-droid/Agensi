@@ -5,7 +5,8 @@ Repo ini berisi skill Claude Code (dikemas sebagai plugin marketplace `agensi`) 
 ## Prioritas
 
 Plugin `house-style` adalah gaya pribadi pemilik repo, jadi aturannya **menang** kalau bertentangan dengan skill lain:
-- `house-style:landing-page-design`: untuk landing page, marketing site, dan web UI apa pun.
+- `house-style:landing-page-design`: untuk landing page, marketing site, dan web UI publik.
+- `house-style:dashboard-design`: untuk dashboard, admin panel, dan layar aplikasi setelah login.
 - `house-style:figma-designer`: untuk semua pekerjaan di Figma lewat Figma MCP.
 - `house-style:ui-router`: peta "kapan pakai skill mana" yang ikut terbawa ke proyek lain (CLAUDE.md ini tidak ikut terbawa). Isinya harus sama dengan tabel dan alur kerja di bawah.
 
@@ -13,7 +14,8 @@ Plugin `house-style` adalah gaya pribadi pemilik repo, jadi aturannya **menang**
 
 | Kebutuhan | Skill utama | Pendukung |
 |---|---|---|
-| Landing page / web UI (selalu dulu) | `house-style:landing-page-design` | skill lain di bawah |
+| Landing page / web UI publik (selalu dulu) | `house-style:landing-page-design` | skill lain di bawah |
+| Dashboard, admin panel, app internal, layar setelah login | `house-style:dashboard-design` (gantikan `landing-page-design`) | `impeccable:impeccable` untuk audit |
 | Desain di Figma | `house-style:figma-designer` | `design-md:design-md` |
 | Mulai proyek baru, tentukan gaya visual | `ui-ux-pro-max:ui-ux-pro-max` | `design-md:design-md` (simpan hasilnya ke DESIGN.md) |
 | "Bikin mirip Stripe / Linear / Apple" | `design-md:design-md` (lihat `references/brands/`) | `ui-ux-pro-max:design-system` |
