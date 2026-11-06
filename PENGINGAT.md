@@ -91,4 +91,12 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 - **Beberapa skill butuh layanan luar:** `scroll-world` butuh Higgsfield, dan `hallmark` sebagian fiturnya pakai Together AI. Cek `SKILL.md`-nya sebelum dipakai.
 - **Ukuran repo** sekitar 65 MB, sebagian besar contoh foto di `taste-skill`.
 
+## 📜 Riwayat
+
+| Tanggal | Kejadian |
+|---|---|
+| 6 Nov 2026 | Skill pribadi `landing-page-design` dan `figma-designer` sudah ada di `.claude/skills/`. |
+| 6 Nov 2026 | Repo dijadikan plugin marketplace: 13 plugin dan 55 skill. Skill pribadi dipindah ke `plugins/house-style/`. |
+| 6 Nov 2026 | [PR #1](https://github.com/2013tib-droid/Agensi/pull/1) **di-merge ke `main`**. Marketplace siap dipakai di proyek lain lewat `/plugin marketplace add 2013tib-droid/agensi`. |
+
 *Dibuat: 6 November 2026*
