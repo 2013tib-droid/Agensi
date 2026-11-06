@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "agensi": { "source": { "source": "github", "repo": "2013tib-droid/agensi" } }
+  },
+  "enabledPlugins": {
+    "house-style@agensi": true,
+    "impeccable@agensi": true,
+    "antislop@agensi": true
+  }
+}

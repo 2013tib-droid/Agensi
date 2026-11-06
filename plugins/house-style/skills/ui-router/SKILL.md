@@ -45,10 +45,21 @@ Skill yang hanya bisa dipanggil manual oleh pengguna (pakai `/`): `/emil-design:
 
 ## Alur kerja default untuk UI baru
 
-1. Cek `DESIGN.md` di root proyek. Kalau belum ada, buat dulu (`design-md` + `ui-ux-pro-max`).
-2. Bangun layar dengan `house-style:landing-page-design` sebagai aturan dasar, ditambah satu dari `taste-skill` / `hallmark` / `frontend-design`, mengikuti token `DESIGN.md`.
-3. Tambah motion seperlunya (`emil-design`, `gsap`, `react-bits`, `magic-ui`), maksimal satu atau dua efek "wow" per halaman.
-4. Polish dan audit dengan `impeccable` sebelum dianggap selesai, lalu saring dengan `antislop` (mode *after*) supaya tidak ada sisa AI slop.
+1. Cek `DESIGN.md` di root proyek. Kalau belum ada, buat dulu (`design-md` + `ui-ux-pro-max`). Ini hanya dilakukan **sekali per proyek**.
+2. Bangun layar dengan `house-style:landing-page-design` sebagai aturan dasar, mengikuti token `DESIGN.md`. Tambah satu dari `taste-skill` / `hallmark` / `frontend-design` hanya untuk landing page atau saat `DESIGN.md` belum menjawab.
+3. Tambah motion seperlunya (`emil-design`, `gsap`, `react-bits`, `magic-ui`), maksimal satu atau dua efek "wow" per halaman. Dashboard umumnya tidak perlu.
+4. Saat **fitur selesai** (bukan per layar), audit file yang berubah dengan `impeccable`, lalu `antislop` (mode *after*).
+5. Catat hasilnya: keputusan visual ke `DESIGN.md`, komponen baru ke `docs/pola.md`.
+
+## Hemat token
+
+Setiap skill yang dimuat menambah token. Penghematan datang dari tidak memutuskan hal yang sama dua kali.
+
+- **Baca catatan proyek dulu:** `DESIGN.md`, `docs/pola.md`, dan bagian "Keputusan" di `CLAUDE.md` proyek. Muat skill hanya untuk hal yang belum dijawab catatan itu.
+- **Biaya kira-kira:** `antislop` ~13k token, `scroll-world` ~12k, `image-to-code-skill` ~9k, `antislop-ui` ~7k, `house-style:*` ~5,5k, `taste-skill` ~5k, `ui-ux-pro-max` ~4k, `impeccable` ~3k, `design-md` ~0,6k. Pilih yang paling kecil yang cukup.
+- **Jangan baca folder `references/` utuh** (hallmark dan design-md berukuran megabyte). Ambil satu file yang relevan.
+- **Edit bagian kecil.** Cari dulu dengan grep sebelum membaca, dan jangan menulis ulang file besar.
+- **Pelajaran yang berlaku untuk semua proyek:** usulkan ke pengguna untuk dimasukkan ke `house-style` di repo agensi.
 
 ## Catatan lisensi
 

@@ -35,10 +35,21 @@ Skill yang hanya bisa dipanggil manual (pakai `/`): `/emil-design:pick-ui-librar
 
 ## Alur kerja default untuk UI baru
 
-1. Cek `DESIGN.md` di root proyek. Kalau belum ada, buat dulu (`design-md` + `ui-ux-pro-max`).
-2. Bangun layar dengan `taste-skill` / `hallmark` / `frontend-design`, mengikuti token DESIGN.md.
-3. Tambah motion seperlunya (`emil-design`, `gsap`, `react-bits`, `magic-ui`), maksimal satu atau dua efek "wow" per halaman.
-4. Polish dan audit dengan `impeccable` sebelum dianggap selesai, lalu saring dengan `antislop` (mode *after*) supaya tidak ada sisa AI slop.
+1. Cek `DESIGN.md` di root proyek. Kalau belum ada, buat dulu (`design-md` + `ui-ux-pro-max`). Ini hanya dilakukan **sekali per proyek**.
+2. Bangun layar mengikuti token DESIGN.md. Pakai `taste-skill` / `hallmark` / `frontend-design` hanya untuk landing page atau saat DESIGN.md belum menjawab.
+3. Tambah motion seperlunya (`emil-design`, `gsap`, `react-bits`, `magic-ui`), maksimal satu atau dua efek "wow" per halaman. Dashboard umumnya tidak perlu.
+4. Saat **fitur selesai** (bukan per layar), audit file yang berubah dengan `impeccable`, lalu `antislop` (mode *after*).
+5. Catat hasilnya: keputusan visual ke `DESIGN.md`, komponen baru ke `docs/pola.md`.
+
+## Hemat token
+
+Skill menambah token setiap kali dimuat. Penghematan datang dari tidak memuat ulang keputusan yang sudah dicatat.
+
+- **Biaya kira-kira per skill** (1 token ≈ 4 karakter): `antislop` ~13k, `antislop-ui` ~7k, `scroll-world` ~12k, `image-to-code-skill` ~9k, `house-style:*` ~5,5k, `taste-skill` ~5k, `ui-ux-pro-max` ~4k, `impeccable` ~3k, `design-md` ~0,6k.
+- **Proyek memakai preset** dari `templates/presets/` (dipasang dengan `scripts/init-proyek.sh`). Plugin yang tidak aktif tidak memakan konteks.
+- **Folder `references/` jangan dibaca utuh** (hallmark 6 MB, design-md 3,3 MB). Ambil satu file yang relevan saja.
+- **Siklus yang membuat proyek makin hemat:** DESIGN.md + `docs/pola.md` + bagian "Keputusan" di CLAUDE.md proyek. Sesi berikutnya cukup membaca file kecil itu tanpa memuat ulang skill. Template ada di `templates/proyek/`.
+- **Pelajaran lintas proyek** (berlaku di semua proyek) masuk ke `plugins/house-style/`, supaya proyek berikutnya langsung mendapatkannya.
 
 ## Aturan repo
 
