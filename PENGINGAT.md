@@ -6,11 +6,11 @@
 
 **Gudang skill** buat Claude. Claude tidak "ingat" antar sesi. Pengetahuannya disimpan di sini sebagai file skill (`SKILL.md`), lalu dipakai di proyek mana pun dengan cara memasang repo ini sebagai **plugin marketplace**.
 
-Isinya ada 14 plugin dan 61 skill UI/UX: gaya pribadi ditambah hasil kurasi dari 15 repo.
+Isinya ada 14 plugin dan 62 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 15 repo.
 
 | Plugin | Asal | Isi |
 |---|---|---|
-| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer`. Prioritas utama |
+| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer` + `ui-router`. Prioritas utama |
 | `antislop` | miqdadbadjuber/anti-slop | 6 skill filter AI-slop (UI, copy, mobile, a11y, komentar kode) + MCP cek kontras |
 | `ui-ux-pro-max` | nextlevelbuilder/ui-ux-pro-max-skill | Database gaya, palet, font, UX per stack |
 | `taste-skill` | Leonxlnx/taste-skill | Website perusahaan kelas atas |
@@ -25,7 +25,7 @@ Isinya ada 14 plugin dan 61 skill UI/UX: gaya pribadi ditambah hasil kurasi dari
 | `design-md` | google-labs-code/design.md + VoltAgent/awesome-design-md | Format DESIGN.md + 84 contoh brand |
 | `ui-libraries` | DavidHDev/react-bits + DavidHDev/canvas-ui | Cara pasang komponen (kode tidak disalin) |
 
-Panduan "kapan pakai skill mana" ada di **[CLAUDE.md](CLAUDE.md)**.
+Panduan "kapan pakai skill mana" ada di **[CLAUDE.md](CLAUDE.md)**. Karena `CLAUDE.md` tidak ikut terbawa ke proyek lain, salinannya ada di skill `house-style:ui-router`, jadi cukup nyalakan `house-style@agensi` dan panduannya ikut.
 
 ## 🚀 Cara pakai di proyek baru
 
@@ -105,7 +105,7 @@ Kebiasaan yang ikut membantu: satu sesi untuk satu fitur (`/clear` saat ganti to
    - Buat `plugins/<nama>/.claude-plugin/plugin.json`.
    - Daftarkan di `.claude-plugin/marketplace.json` dan `.claude/settings.json`.
    - Jalankan `claude plugin validate .`.
-3. Update tabel di file ini dan di `CLAUDE.md`.
+3. Update tabel di file ini, di `CLAUDE.md`, dan di skill `house-style:ui-router`, jumlah plugin/skill di atas, dan tambahkan baris di Riwayat.
 
 ## 🔄 Cara update skill ke versi terbaru
 
@@ -124,7 +124,7 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 - **Repo `nexu-io/open-design`** berisi 171 skill. Yang diambil hanya 11 yang relevan untuk UI/web dan isinya lengkap (bukan sekadar penunjuk ke repo lain). Kalau butuh yang lain, tambahkan ke `OD_PICKS` di `scripts/sync-skills.sh`.
 - **Skill duplikat dari open-design tidak diambil** (taste, gsap, emil, ui-ux-pro-max). Yang dipakai versi aslinya.
 - **Beberapa skill butuh layanan luar:** `scroll-world` butuh Higgsfield, dan `hallmark` sebagian fiturnya pakai Together AI. Cek `SKILL.md`-nya sebelum dipakai.
-- **Ukuran repo** sekitar 65 MB, sebagian besar contoh foto di `taste-skill`.
+- **Ukuran repo** sekitar 64 MB (per 6 Nov 2026), sebagian besar contoh foto di `taste-skill`.
 
 ## 📜 Riwayat
 
@@ -133,7 +133,8 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Skill pribadi `landing-page-design` dan `figma-designer` sudah ada di `.claude/skills/`. |
 | 6 Nov 2026 | Repo dijadikan plugin marketplace: 13 plugin dan 55 skill. Skill pribadi dipindah ke `plugins/house-style/`. |
 | 6 Nov 2026 | [PR #1](https://github.com/2013tib-droid/Agensi/pull/1) **di-merge ke `main`**. Marketplace siap dipakai di proyek lain lewat `/plugin marketplace add 2013tib-droid/agensi`. |
-| 6 Nov 2026 | Tambah plugin `antislop` dari miqdadbadjuber/anti-slop: 14 plugin dan 61 skill. |
+| 6 Nov 2026 | Tambah skill `house-style:ui-router` supaya panduan pemilihan skill ikut terbawa ke proyek lain. Total 56 skill. |
+| 6 Nov 2026 | Tambah plugin `antislop` dari miqdadbadjuber/anti-slop. Total 14 plugin dan 62 skill. |
 | 6 Nov 2026 | Strategi hemat token: preset plugin per jenis proyek, template proyek (`CLAUDE.md`, `docs/pola.md`), dan `scripts/init-proyek.sh`. |
 
 *Dibuat: 6 November 2026*

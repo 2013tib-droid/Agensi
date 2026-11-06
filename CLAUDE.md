@@ -7,6 +7,7 @@ Repo ini berisi skill Claude Code (dikemas sebagai plugin marketplace `agensi`) 
 Plugin `house-style` adalah gaya pribadi pemilik repo, jadi aturannya **menang** kalau bertentangan dengan skill lain:
 - `house-style:landing-page-design`: untuk landing page, marketing site, dan web UI apa pun.
 - `house-style:figma-designer`: untuk semua pekerjaan di Figma lewat Figma MCP.
+- `house-style:ui-router`: peta "kapan pakai skill mana" yang ikut terbawa ke proyek lain (CLAUDE.md ini tidak ikut terbawa). Isinya harus sama dengan tabel dan alur kerja di bawah.
 
 ## Kapan pakai skill mana
 
@@ -55,3 +56,4 @@ Skill menambah token setiap kali dimuat. Penghematan datang dari tidak memuat ul
 - Isi `plugins/*` (kecuali `house-style/`, `design-md/skills/design-md/SKILL.md`, dan `ui-libraries/`) adalah salinan upstream. Jangan diedit manual; update lewat `bash scripts/sync-skills.sh`.
 - Skill baru: buat folder `plugins/<nama>/` dengan `.claude-plugin/plugin.json` + `skills/<skill>/SKILL.md`, lalu daftarkan di `.claude-plugin/marketplace.json` dan `.claude/settings.json`. Cek dengan `claude plugin validate .`.
 - Setiap plugin wajib menyimpan `LICENSE` dan `SOURCE.md` dari sumbernya.
+- Setelah menambah, menghapus, atau mengganti skill/plugin: perbarui tabel "Kapan pakai skill mana" di file ini dan di `plugins/house-style/skills/ui-router/SKILL.md`, lalu di `PENGINGAT.md` perbarui tabel plugin, jumlah plugin/skill beserta tanggalnya, dan tambahkan satu baris di bagian Riwayat.
