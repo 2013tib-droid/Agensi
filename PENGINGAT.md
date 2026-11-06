@@ -6,11 +6,11 @@
 
 **Gudang skill** buat Claude. Claude tidak "ingat" antar sesi. Pengetahuannya disimpan di sini sebagai file skill (`SKILL.md`), lalu dipakai di proyek mana pun dengan cara memasang repo ini sebagai **plugin marketplace**.
 
-Isinya ada 13 plugin dan 55 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 14 repo.
+Isinya ada 13 plugin dan 56 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah hasil kurasi dari 14 repo.
 
 | Plugin | Asal | Isi |
 |---|---|---|
-| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer`. Prioritas utama |
+| `house-style` ⭐ | **milik sendiri** | `landing-page-design` + `figma-designer` + `ui-router`. Prioritas utama |
 | `ui-ux-pro-max` | nextlevelbuilder/ui-ux-pro-max-skill | Database gaya, palet, font, UX per stack |
 | `taste-skill` | Leonxlnx/taste-skill | Website perusahaan kelas atas |
 | `impeccable` | pbakaus/impeccable | Polish, audit, critique UI |
@@ -24,7 +24,7 @@ Isinya ada 13 plugin dan 55 skill UI/UX (per 6 Nov 2026): gaya pribadi ditambah 
 | `design-md` | google-labs-code/design.md + VoltAgent/awesome-design-md | Format DESIGN.md + 84 contoh brand |
 | `ui-libraries` | DavidHDev/react-bits + DavidHDev/canvas-ui | Cara pasang komponen (kode tidak disalin) |
 
-Panduan "kapan pakai skill mana" ada di **[CLAUDE.md](CLAUDE.md)**.
+Panduan "kapan pakai skill mana" ada di **[CLAUDE.md](CLAUDE.md)**. Karena `CLAUDE.md` tidak ikut terbawa ke proyek lain, salinannya ada di skill `house-style:ui-router`, jadi cukup nyalakan `house-style@agensi` dan panduannya ikut.
 
 ## 🚀 Cara pakai di proyek baru
 
@@ -70,7 +70,7 @@ Catatan:
    - Buat `plugins/<nama>/.claude-plugin/plugin.json`.
    - Daftarkan di `.claude-plugin/marketplace.json` dan `.claude/settings.json`.
    - Jalankan `claude plugin validate .`.
-3. Update tabel di file ini dan di `CLAUDE.md`, jumlah plugin/skill di atas, dan tambahkan baris di Riwayat.
+3. Update tabel di file ini, di `CLAUDE.md`, dan di skill `house-style:ui-router`, jumlah plugin/skill di atas, dan tambahkan baris di Riwayat.
 
 ## 🔄 Cara update skill ke versi terbaru
 
@@ -98,5 +98,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Skill pribadi `landing-page-design` dan `figma-designer` sudah ada di `.claude/skills/`. |
 | 6 Nov 2026 | Repo dijadikan plugin marketplace: 13 plugin dan 55 skill. Skill pribadi dipindah ke `plugins/house-style/`. |
 | 6 Nov 2026 | [PR #1](https://github.com/2013tib-droid/Agensi/pull/1) **di-merge ke `main`**. Marketplace siap dipakai di proyek lain lewat `/plugin marketplace add 2013tib-droid/agensi`. |
+| 6 Nov 2026 | Tambah skill `house-style:ui-router` supaya panduan pemilihan skill ikut terbawa ke proyek lain. Total 56 skill. |
 
 *Dibuat: 6 November 2026*
