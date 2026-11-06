@@ -42,7 +42,7 @@ Skill ini hanya peta. Ia tidak berisi aturan desain. Baca, pilih skill yang tepa
 | React Native / Expo animasi | `emil-design:animate-expo` | |
 | Uji UI dengan data ekstrem | `emil-design:break-ui` | |
 
-Skill yang hanya bisa dipanggil manual oleh pengguna (pakai `/`): `/house-style:landing` (bangun landing page dengan kombinasi skill tetap), `/house-style:polish` (audit + rapikan UI), `/emil-design:pick-ui-library`, `/emil-design:prototype`, `/emil-design:review-animations`. Sarankan ke pengguna kalau cocok, jangan panggil sendiri.
+Skill yang hanya bisa dipanggil manual oleh pengguna (pakai `/`): `/house-style:landing` (bangun landing page dengan kombinasi skill tetap), `/house-style:polish` (audit + rapikan UI), `/house-style:cek-ui` (cek tampilan dengan Playwright, atau pasang cek otomatisnya), `/emil-design:pick-ui-library`, `/emil-design:prototype`, `/emil-design:review-animations`. Sarankan ke pengguna kalau cocok, jangan panggil sendiri.
 
 ## Mode hemat
 

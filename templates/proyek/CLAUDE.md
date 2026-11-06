@@ -28,6 +28,10 @@
    - keputusan arsitektur/produk → satu baris di "Keputusan" di bawah
    - pelajaran yang berlaku untuk **semua** proyek → usulkan ke repo `agensi` (`house-style`)
 
+## Cek UI
+
+Kalau `.claude/cek-ui.json` ada, laporan cek UI otomatis muncul setiap kali selesai mengubah file UI. Perbaiki yang memang bug. Buka screenshot di `.claude/cek-ui/` hanya kalau laporan teks tidak cukup. Pasang dengan `/house-style:cek-ui pasang`.
+
 ## Keputusan
 
 <!-- Format: YYYY-MM-DD · keputusan · alasan singkat -->

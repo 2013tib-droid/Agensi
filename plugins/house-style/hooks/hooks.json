@@ -1,0 +1,16 @@
+{
+  "description": "Cek UI otomatis dengan Playwright saat Claude selesai, hanya di proyek yang punya .claude/cek-ui.json dan hanya kalau file UI berubah.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/cek-ui.cjs\" --hook",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}
