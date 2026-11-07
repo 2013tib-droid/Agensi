@@ -129,6 +129,8 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 - **Repo `nexu-io/open-design`** berisi 171 skill. Yang diambil hanya 11 yang relevan untuk UI/web dan isinya lengkap (bukan sekadar penunjuk ke repo lain). Kalau butuh yang lain, tambahkan ke `OD_PICKS` di `scripts/sync-skills.sh`.
 - **Skill duplikat dari open-design tidak diambil** (taste, gsap, emil, ui-ux-pro-max). Yang dipakai versi aslinya.
 - **Beberapa skill butuh layanan luar:** `scroll-world` butuh Higgsfield, dan `hallmark` sebagian fiturnya pakai Together AI. Cek `SKILL.md`-nya sebelum dipakai.
+- **Gaya landing page sekarang "vibrant conversion", bukan minimalis.** Alasannya: landing SoalSKD buatan Claude terlihat polos dibanding mockup buatan GPT, karena aturan lama melarang gradasi latar, memaksa judul abu-abu, ikon garis tipis, dan mengosongkan bukti sosial yang datanya belum ada. Kalau butuh gaya minimalis (misalnya tool developer), minta secara eksplisit di prompt.
+- **Data contoh wajib diganti sebelum live.** Testimoni, jumlah pengguna, dan harga yang belum ada diisi contoh bertanda `data-contoh="true"` dan tercantum di laporan akhir ("Harus diganti sebelum live"). Cek dengan `grep -rn data-contoh` sebelum rilis.
 - **Ukuran repo** sekitar 64 MB (per 6 Nov 2026), sebagian besar contoh foto di `taste-skill`.
 
 ## 📜 Riwayat
@@ -145,5 +147,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Hemat token: tabel skill, alur kerja, dan biaya token dipindah dari `CLAUDE.md` ke `house-style:ui-router` saja (dimuat saat perlu), plus "mode hemat" lewat kata `hemat`. Tambah perintah manual `/house-style:landing` dan `/house-style:polish`. Total 65 skill. |
 | 6 Nov 2026 | Tambah hook cek UI otomatis (Playwright, Stop hook) dan perintah `/house-style:cek-ui`. Aktif hanya di proyek yang punya `.claude/cek-ui.json`. Total 66 skill. |
 | 7 Nov 2026 | Gaya default `landing-page-design` diganti dari minimalis ke "vibrant conversion" (B0): warna brand + aksen, gradasi lembut, mockup HP, foto orang, ikon berwarna, bukti sosial di tiap layar, data contoh ditandai `data-contoh`. `figma-designer` dan `ui-router` ikut disesuaikan. Total 66 skill. |
+| 7 Nov 2026 | [PR #13](https://github.com/2013tib-droid/Agensi/pull/13) (gaya "vibrant conversion") **di-merge ke `main`**. |
 
 *Dibuat: 6 November 2026*
