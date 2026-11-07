@@ -144,5 +144,6 @@ Proyek lain akan ikut dapat versi baru saat marketplace di-refresh (`/plugin mar
 | 6 Nov 2026 | Tambah skill `house-style:dashboard-design` untuk dashboard dan app (menggantikan `landing-page-design` di layar setelah login). Total 63 skill. |
 | 6 Nov 2026 | Hemat token: tabel skill, alur kerja, dan biaya token dipindah dari `CLAUDE.md` ke `house-style:ui-router` saja (dimuat saat perlu), plus "mode hemat" lewat kata `hemat`. Tambah perintah manual `/house-style:landing` dan `/house-style:polish`. Total 65 skill. |
 | 6 Nov 2026 | Tambah hook cek UI otomatis (Playwright, Stop hook) dan perintah `/house-style:cek-ui`. Aktif hanya di proyek yang punya `.claude/cek-ui.json`. Total 66 skill. |
+| 7 Nov 2026 | Gaya default `landing-page-design` diganti dari minimalis ke "vibrant conversion" (B0): warna brand + aksen, gradasi lembut, mockup HP, foto orang, ikon berwarna, bukti sosial di tiap layar, data contoh ditandai `data-contoh`. `figma-designer` dan `ui-router` ikut disesuaikan. Total 66 skill. |
 
 *Dibuat: 6 November 2026*

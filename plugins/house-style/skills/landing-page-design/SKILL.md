@@ -1,6 +1,6 @@
 ---
 name: landing-page-design
-description: "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, public web page, page section, component, or prototype (for dashboards, admin panels and logged-in app screens use dashboard-design instead), even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions."
+description: "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus a bold, eye catching visual system (device mockups, people photos, soft gradient backgrounds, colored icon tiles, social proof) with strict rules for typography, spacing, corner radius, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, public web page, page section, component, or prototype (for dashboards, admin panels and logged-in app screens use dashboard-design instead), even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions."
 ---
 
 # Landing Page Design
@@ -10,6 +10,8 @@ A landing page is not a homepage. A homepage serves multiple intents. A landing 
 **one offer → one audience → one primary action.**
 
 This skill has two halves. **Part A** decides what the page says and how it is structured. **Part B** is the non negotiable visual system. Work through A before touching B.
+
+**Default look: lively and persuasive, not minimal.** The page should look like a polished consumer product ad: a device mockup showing the real product, people who look like the audience, warm accent colors, soft colored backgrounds, star ratings and numbers everywhere a visitor hesitates. A plain white page with grey text and one button is a failure, even if every token is correct. Go minimal only when the user asks for it or the product is a developer tool sold to engineers.
 
 ## Scope
 
@@ -44,7 +46,8 @@ Gather these before designing or writing. Ask only for what is missing, and ask 
 
 **Constraints**
 - Brand voice: casual or professional
-- Design direction: minimal editorial, playful 3D, glass UI
+- Design direction: default is **vibrant conversion** (B0). Other options only on request: minimal editorial, playful 3D, glass UI
+- Visual assets: logo, product screenshots, photos of real users or the team, brand colors
 - Mobile priority?
 
 If the user cannot answer, make a reasonable assumption, state it in one line, and continue. Do not stall the build.
@@ -55,19 +58,21 @@ If the user cannot answer, make a reasonable assumption, state it in one line, a
 1. Headline, outcome plus audience
 2. Subheadline, clarifies how and adds specificity
 3. Primary CTA, clear verb plus what they get
-4. One proof signal, logo strip, stat, or short testimonial
-5. Hero visual, product screenshot or video, or a strong illustration
+4. Proof signal right under the CTAs: avatar stack plus "Dipercaya oleh {jumlah} {audiens}" plus five stars
+5. Hero visual: a device mockup (phone or laptop, slightly tilted) showing the real product screen, sitting on a soft colored blob, with one or two floating badges (timer, score, "+120 poin")
+6. Stats bar directly under the hero: three or four numbers with colored icons in one white card (for example "350+ soal", "4 paket", "100% mobile", "Akses selamanya")
 
 **Mid page (the argument)**
-6. Problem to solution, one section
-7. Benefits, three to five, outcome driven
-8. How it works, three steps
-9. Social proof, testimonials or a case study
+7. Problem to solution as two cards side by side: left "before" card with red ✕ list and a person looking confused, right "after" card with green ✓ list and the same audience looking happy, an arrow between them
+8. Benefits, three to five, each in a card with a colored icon tile, outcome driven
+9. How it works or progress, three or four steps on a connected timeline with check badges
+10. Social proof: testimonial cards with photo, name, role or origin, five stars, and a concrete result ("nilai naik dari 298 menjadi 341"), in a carousel on mobile
 
 **Bottom (objection handling)**
-10. FAQ, six to twelve questions
-11. Risk reversal, trial, cancel anytime, guarantee
-12. Final CTA, identical to the top
+11. FAQ, six to twelve questions
+12. Risk reversal, trial, cancel anytime, guarantee
+13. Final CTA as a bold colored banner: urgency chip ("Jangan tunggu sampai hari ujian"), headline, price anchor ("Mulai dari Rp15.000"), and a white or accent button
+14. Footer with trust marks (secure payment, social icons)
 
 Include the mandatory tagline reveal section from B11 somewhere in the mid page argument, typically right after the hero or after benefits.
 
@@ -147,11 +152,45 @@ Never rebuild the whole page on each iteration. Section by section keeps control
 
 Every visual value must resolve through these rules instead of being invented ad hoc.
 
+## B0. Make it attractive (read this first)
+
+Rules below keep the page tidy. This section makes it sell. Each item is required unless the user asks for a minimal style.
+
+**Color**
+- One saturated brand color (for example royal blue `#2348E0`) plus one warm accent for highlights, stars, badges and the price (yellow or amber, for example `#FFC21A`). Success green and error red for ✓ and ✕ marks.
+- Tints of the brand color (5 to 10% opacity) for section backgrounds, icon tiles and blobs. Never a page that is only white and grey.
+- At least one full bleed brand colored band on the page, usually the final CTA banner.
+
+**Hero headline**
+- Dark solid text, extra bold, with the key phrase in the brand color and a hand drawn underline swoosh in the accent color under it ("Latihan SKD yang terasa seperti **ujian CAT** sesungguhnya").
+- A small pill above the headline with an icon and the context ("🏆 CPNS 2027 · Simulasi CAT terbaru").
+
+**Depth and decoration**
+- Cards are white on a tinted background with a soft large shadow (`shadow-xl` with the brand hue at low opacity), not hairline borders only.
+- Soft round blobs or a radial glow of the brand tint behind the hero visual and behind people photos.
+- Small doodles near key visuals: sparkle lines, a squiggle, a curved arrow. Use them sparingly, two to four per page.
+
+**Imagery**
+- A device mockup of the real product UI in the hero, built in HTML and CSS (a rounded phone frame with notch) so it stays sharp and editable. Tilt it a few degrees.
+- Photos of people who match the audience (region, age, dress). Cut out or on a tinted blob, never a grey stock rectangle. Use the user's photos first; otherwise use real photos from Unsplash or Pexels that match, and list them in the final report so the user can swap them.
+- Avatar photos on every testimonial and in the avatar stack.
+
+**Proof everywhere**
+- Five star rows in the accent color, avatar stacks, numbers with icons, check badges. A visitor should see a proof element in every screen height of scrolling.
+
+**Buttons**
+- Primary: brand color, white text, pill or `rounded-xl`, arrow icon, soft colored shadow. Secondary: white with brand border and a small play or eye icon ("Lihat contoh soal").
+
+**Mobile**
+- Keep everything above on 390px: mockup below the CTA, stats as a two by two grid, before/after cards stacked, testimonials as a swipe carousel with dots.
+
 ## B1. Typography
 
 ### Fonts
 
 **Use:** Geist, Manrope, Geist Mono, Poppins.
+
+**Also allowed:** Plus Jakarta Sans (good default for Indonesian audiences).
 
 **Never use:** Inter, Roboto, Arial, Open Sans, Helvetica.
 
@@ -159,7 +198,7 @@ Every visual value must resolve through these rules instead of being invented ad
 
 **One typeface per site.** Do not pair two fonts unless the prompt explicitly asks for it. Geist Mono is allowed alongside a primary font only for code, data, or numeric UI where a monospace is functionally required.
 
-**Never use ultra bold weights** (900 / black). Cap at semibold or bold.
+**Never use 900 / black.** Hero and section headings may use extrabold (800); everything else caps at bold.
 
 ### Copy rules
 
@@ -197,8 +236,8 @@ Every piece of text uses one of these named styles. Never style text with a loos
 
 | Style | Scale step | Size / line height | Weight |
 |---|---|---|---|
-| Heading 1 | `text-6xl` | 60 / 60 | Semibold |
-| Heading 2 | `text-5xl` | 48 / 48 | Semibold |
+| Heading 1 | `text-6xl` | 60 / 60 | Extrabold |
+| Heading 2 | `text-5xl` | 48 / 48 | Bold |
 | Heading 3 | `text-4xl` | 36 / 40 | Semibold |
 | Heading 4 | `text-3xl` | 30 / 36 | Semibold |
 | Heading 5 | `text-2xl` | 24 / 32 | Semibold |
@@ -275,7 +314,7 @@ Example: an outer card at `rounded-2xl` (16px) with 8px of internal padding give
 ## B4. Borders and backgrounds
 
 - **Never apply a border to only one side of a card.** Borders go all the way around or not at all.
-- **Never use gradients in backgrounds.** Backgrounds are flat.
+- **Soft gradients are allowed** on the hero background, behind visuals, and on the final CTA banner. Keep them within one hue family (for example light blue to white, or royal blue to a deeper blue). Never rainbow or purple to pink gradients, and never under body text where contrast drops below 4.5:1.
 
 ### Dark mode background colors
 
@@ -287,10 +326,8 @@ Use only these:
 
 ### Heading color
 
-- **Dark theme:** left to right gradient on the heading text, `#FFFFFF` → `#9B9B9B`.
-- **Light theme:** left to right gradient on the heading text, `#000000` → `#666666`.
-
-This is the one place gradients are used, and only on text, never on the background.
+- Solid near black text (light theme) or white (dark theme). Never grey or grey gradient text on the hero, it looks washed out.
+- The key phrase is in the brand color with an accent color underline swoosh (B0).
 
 ### Layout
 
@@ -300,9 +337,11 @@ This is the one place gradients are used, and only on text, never on the backgro
 
 ## B6. Icons
 
-**Use:** Phosphor, Solar, or Iconamoon.
+**Use:** Phosphor (Fill or Duotone weight), Solar (Bold Duotone), or Iconamoon.
 
 **Never use:** Material Icons, Material Symbols.
+
+**Style:** feature and stat icons are colored, not grey: put each icon in a rounded tile tinted with its color (brand, accent, green) or use a duotone icon in two tones of the brand. Thin outline icons are only for small UI (nav, arrows, close).
 
 ## B7. Motion
 
@@ -339,7 +378,7 @@ Every piece of sample content should read like it came from a real product with 
 - **Write the copy.** No placeholder Latin, no "Your headline here". Draft real sentences in the product's voice.
 - **People.** Give testimonials and team members full, specific names that fit the product's audience and region. Never reuse one face for two people.
 - **Brands and logos.** Invent names that sound like they belong in the product's industry. A logistics tool's customers sound like logistics companies, not generic tech startups.
-- **Never invent facts.** On a real product's page, prices, guarantees, statistics, customer counts, testimonials, and logos must come from the user or a real source. When a fact is missing, use a clearly marked placeholder such as `{{price}}` or `{{testimonial}}` instead of making one up.
+- **Never drop a proof section because data is missing.** Build it fully so the page looks finished. Use real facts from the user first. When a fact is missing, fill it with believable sample content and mark it in code (`data-contoh="true"` plus an HTML comment `<!-- CONTOH: ganti dengan data asli -->`), then list every sample item in the final report under "Harus diganti sebelum live". Never tell the user sample testimonials, counts or prices are real.
 - **Sample numbers.** In fictional demos and prototypes (where the invented names and brands above are fine), avoid suspiciously round figures. Pricing should look like real pricing, metrics should carry a decimal or an odd final digit, and dates across a list should vary.
 - **Banned filler words.** Do not write "revolutionize", "supercharge", "cutting edge", "effortless", "transform your workflow", "take it to the next level", "harness the power", or "world class". Say what the product does in plain terms instead.
 - **Sentence case** for headings and buttons.
@@ -422,18 +461,19 @@ Then build section by section per A6.
 - [ ] Layout type chosen deliberately
 
 **Visual**
-- [ ] Single approved typeface, no italics, no ultra bold
+- [ ] Single approved typeface, no italics, no 900 weight
 - [ ] No hyphens in copy, no orphaned words
 - [ ] Every font size lands on a Tailwind scale step
 - [ ] Every text element uses a named text style (Heading, Title, Body, Button, Caption)
 - [ ] Every spacing value comes from the spacing table
 - [ ] Nested radii follow the formula
-- [ ] No single sided card borders, no background gradients
+- [ ] No single sided card borders; gradients only soft, one hue family, where B4 allows
+- [ ] B0 present: brand plus accent color, device mockup in hero, people photos, colored icon tiles, proof in every screen height, colored CTA banner
 - [ ] Hero heading and subheading capped at 680px with meaningful line breaks
-- [ ] Icons from Phosphor, Solar, or Iconamoon
+- [ ] Icons from Phosphor, Solar, or Iconamoon, colored in tiles for features and stats
 - [ ] Every transition uses the B7 base curve, scroll reveals use IntersectionObserver
 - [ ] Tagline reveal section present, minimum two lines, words activate one at a time on scroll
-- [ ] No invented prices, stats, or testimonials; missing facts use marked placeholders
+- [ ] Sample prices, stats, testimonials marked `data-contoh` and listed in the final report
 - [ ] Checked at 390px with no overflow
 
 **Content and ship**
