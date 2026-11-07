@@ -93,20 +93,16 @@ The names and structure are fixed. The hex values follow the user's brand. Full 
 ### Surfaces
 
 - **Dark mode backgrounds, only these:** `#000000` · `#181818` · `#1F1F1F` · `#272727` · `#313131` · `#131209`
-- **No background gradients.** Surfaces are flat. This includes buttons and fade overlays.
-- **Hero heading** is the one gradient exception, on the text only, left to right:
-  - dark theme `#FFFFFF` → `#9B9B9B`
-  - light theme `#000000` → `#666666`
-
-  Bind both gradient stops to color variables (`boundVariables.color` on each stop) so the gradient switches with the mode.
-- **One accent color**, kept below 80% saturation.
+- **Landing and marketing frames follow `landing-page-design` B0:** soft one hue gradients on the hero and CTA banner, brand tinted blobs, device mockup, people photos, colored icon tiles. Bind gradient stops to color variables (`boundVariables.color` on each stop). App and dashboard frames stay flat.
+- **Hero heading** is solid text with the key phrase in the brand color, never grey gradient text.
+- **One brand color plus one warm accent** (stars, badges, price highlights).
 - **Borders go all the way around or not at all.** Never a single-side border on a card. To divide rows, use a 1px rectangle filled with a `Border/*` token, not a one-side stroke.
 
 ## Contrast and accessibility
 
 - Body text: at least **4.5:1** against its background.
 - Large text (24 and up, or 18 bold and up) and UI parts (icons, input borders, focus rings): at least **3:1**.
-- On gradient headings, check contrast at the lightest end of the gradient, not the darkest.
+- On gradient backgrounds, check text contrast at the lightest end of the gradient.
 - Never rely on color alone to show state. Pair it with an icon, label or weight change.
 - Touch targets are at least 44 × 44 on mobile frames.
 - If a brand color fails contrast with white text, use a darker shade of the same palette for the `Action/*` token rather than changing the text.
@@ -114,7 +110,7 @@ The names and structure are fixed. The hex values follow the user's brand. Full 
 ## Layout
 
 - Hero heading and subheading max width **680**.
-- No eyebrow tag (the small pill or label above a heading, like `● Design QA, not a redesign`) by default. Add one only when the user asks for it, or when an inspiration image the user uploaded shows one.
+- Landing hero frames get one context pill above the heading (icon plus short context, for example `🏆 CPNS 2027 · Simulasi CAT terbaru`). Other headings get no eyebrow tag unless the user asks for one.
 - Desktop frames are 1440 wide, with a centered content container of 1200 to 1280.
 - Add 768 and 390 frames when the screen needs responsive versions.
 - Don't default to three equal cards in a row. Consider a two-column zig zag, an asymmetric grid or a bento layout.
@@ -123,7 +119,7 @@ The names and structure are fixed. The hex values follow the user's brand. Full 
 ## Icons
 
 - Use Phosphor, Solar or Iconamoon. Never Material Icons or Material Symbols.
-- Use one stroke weight across the whole file.
+- Use one stroke weight across the whole file. Feature and stat icons on landing frames are colored, in tinted tiles.
 - Import icons as SVG (`createNodeFromSvg`) and recolor them with a bound `Icon/*` token. Never redraw an icon from primitives.
 
 ## Components and states
@@ -172,8 +168,8 @@ When the task is a landing page, also follow the user's `landing-page-design` sk
 - [ ] Core Colors palettes have at least 10 shades each, and every Color System token is an alias
 - [ ] The `Foundations` frame shows every token and text style, with samples bound to their variables and labels in sync
 - [ ] Contrast passes 4.5:1 for body and 3:1 for large text and UI parts
-- [ ] No background gradients, no single-side borders, no italics
-- [ ] Hero heading and subheading capped at 680, the hero heading has no periods, and there are no eyebrow tags unless asked for or shown in an uploaded inspiration image
+- [ ] Gradients only on landing frames, soft and one hue family; no single-side borders, no italics
+- [ ] Hero heading and subheading capped at 680, the hero heading has no periods, and only the landing hero has a context pill
 - [ ] Interactive components have all state variants, and buttons have all 5 types × 5 states
 - [ ] Icons from Phosphor, Solar or Iconamoon at one stroke weight
 - [ ] No placeholder copy, no layer named `Frame` or `Group`

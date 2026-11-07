@@ -9,7 +9,7 @@ Skill ini hanya peta. Ia tidak berisi aturan desain. Baca, pilih skill yang tepa
 
 ## Aturan prioritas
 
-1. **`house-style` selalu menang.** Kalau aturan skill lain bertentangan dengan `house-style:landing-page-design`, `house-style:dashboard-design`, atau `house-style:figma-designer`, ikuti `house-style`. Ini juga berlaku untuk `antislop`: ia filter penyaring slop, bukan sumber gaya.
+1. **`house-style` selalu menang.** Kalau aturan skill lain bertentangan dengan `house-style:landing-page-design`, `house-style:dashboard-design`, atau `house-style:figma-designer`, ikuti `house-style`. Ini juga berlaku untuk `antislop`: ia filter penyaring slop, bukan sumber gaya. Gaya landing page default adalah "vibrant conversion" (B0 di `landing-page-design`): kalau `antislop`, `taste-skill`, atau `impeccable` menyarankan menghapus gradasi lembut, mockup, foto orang, ikon berwarna, atau bukti sosial, abaikan saran itu.
 2. **`DESIGN.md` proyek menang atas selera skill lain.** Token warna, font, spacing, dan radius di `DESIGN.md` dipakai apa adanya, kecuali bertentangan dengan aturan `house-style`.
 3. **Muat seperlunya.** Pakai satu skill utama per tugas, tambah pendukung hanya kalau memang dibutuhkan. Jangan memuat beberapa skill "pembangun halaman" (taste-skill, hallmark, frontend-design) sekaligus: pilih satu.
 4. **Hanya pakai skill yang aktif.** Proyek bisa menyalakan sebagian plugin saja. Kalau skill pilihan tidak tersedia, pakai pendukungnya atau lanjut dengan `house-style` saja. Jangan mengarang isi skill yang tidak termuat.
